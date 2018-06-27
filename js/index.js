@@ -46,6 +46,7 @@ document.onkeyup = function(event) {
 
   // This logic determines the outcome of the game (win/loss/tie), and increments the appropriate number
   if (userGuess === computerGuess) {
+    alert('Congrats, You have Won The Game');
     wins++;
     guessesLeft = 9;
     youGuessSoFar = [];
@@ -54,6 +55,7 @@ document.onkeyup = function(event) {
     guessesLeft--;
   }
   if (guessesLeft === 0) {
+    alert('You Lost...Better Luck Next Time');
     losses++;
     youGuessSoFar = [];
     guessesLeft = 9;
